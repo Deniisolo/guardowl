@@ -4,6 +4,7 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { useState } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import logo from "../pics/logoguardowl.png"
 export type NavProps = {
   // types...
 };
@@ -33,11 +34,11 @@ const Nav: React.FC<NavProps> = ({}) => {
 
       {/* Menú en pantallas grandes (visible siempre) */}
       <ul className='hidden md:flex space-x-4 bg-customBg'>
-        <img src="" alt="" />
-        <li className='p-2 hover:bg-hoverBg cursor-pointer text-customText font-semibold'>About</li>
-        <li className='p-2 hover:bg-hoverBg cursor-pointer text-customText font-semibold'>Team</li>
-        <li className='p-2 hover:bg-hoverBg cursor-pointer text-customText font-semibold'>Social Media</li>
-        <li className='p-2 hover:bg-hoverBg cursor-pointer text-customText font-semibold'>Download</li>
+        <img src={logo.src} alt="" />
+        <li className='p-5 hover:bg-hoverBg cursor-pointer text-customText font-light '>About</li>
+        <li className='p-5 hover:bg-hoverBg cursor-pointer text-customText font-light'>Team</li>
+        <li className='p-5 hover:bg-hoverBg cursor-pointer text-customText font-light'>Social Media</li>
+        <li className='p-5 hover:bg-hoverBg cursor-pointer text-customText font-light'>Download</li>
       </ul>
     </div>
   );
