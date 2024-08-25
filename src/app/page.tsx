@@ -3,11 +3,11 @@ import homephone from "../pics/homeimage.png";
 import logoguard from "../pics/logoguardowl.png";
 import logo from "../pics/logo.png";
 import donwload from "../pics/downloadapp.png";
+import Aboutus from "./aboutus/page";
 
 export default function Home() {
   return (
     <main className="bg-customBg min-h-screen">
-      <Nav />
       <div className="flex justify-center items-center min-h-screen w-full">
         <section className="hidden md:flex justify-center items-center w-full md:w-3/4 lg:w-2/3">
           <div className="flex justify-center items-center w-full">
@@ -44,7 +44,7 @@ export default function Home() {
         </section>
        
       </div>
-      
+      <Aboutus/>
     </main>
   );
 }

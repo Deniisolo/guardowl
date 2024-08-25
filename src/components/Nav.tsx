@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
-import { FaLinkedin } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
+
 import Link from "next/link";
 import { useState } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
@@ -59,7 +58,7 @@ const Nav: React.FC<NavProps> = ({}) => {
       </div>
 
       {/* Menú en pantallas grandes (visible siempre) */}
-      <ul className="hidden md:flex space-x-4 bg-customBg">
+      <ul className="hidden md:flex items-center bg-customBg fixed top-0 left-0 w-full z-50">
         <a href="/">
           <img src={logo.src} alt="" /> 
         </a>
